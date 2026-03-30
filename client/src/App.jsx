@@ -1,39 +1,36 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import Navigation from './components/Navigation'
-import ViewCars from './pages/ViewCars'
-import EditCar from './pages/EditCar'
-import CreateCar from './pages/CreateCar'
-import CarDetails from './pages/CarDetails'
+import ViewKeyboards from './pages/ViewKeyboards'
+import EditKeyboard from './pages/EditKeyboard'
+import CreateKeyboard from './pages/CreateKeyboard'
+import KeyboardDetails from './pages/KeyboardDetails'
 import './App.css'
 
 const App = () => {
   let element = useRoutes([
     {
       path: '/',
-      element: <CreateCar title='BOLT BUCKET | Customize' />
+      element: <CreateKeyboard title='CLICK & CLACK | Customize' />
     },
     {
-      path:'/customcars',
-      element: <ViewCars title='BOLT BUCKET | Custom Cars' />
+      path:'/customkeyboards',
+      element: <ViewKeyboards title='CLICK & CLACK | Custom Keyboards' />
     },
     {
-      path: '/customcars/:id',
-      element: <CarDetails title='BOLT BUCKET | View' />
+      path: '/customkeyboards/:id',
+      element: <KeyboardDetails title='CLICK & CLACK | View' />
     },
     {
       path: '/edit/:id',
-      element: <EditCar title='BOLT BUCKET | Edit' />
+      element: <EditKeyboard title='CLICK & CLACK | Edit' />
     }
   ])
 
   return (
     <div className='app'>
-
       <Navigation />
-
       { element }
-
     </div>
   )
 }
