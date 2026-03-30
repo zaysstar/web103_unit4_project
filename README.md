@@ -32,7 +32,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='YOUR_GIF_URL_HERE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![ezgif-497669b37e233162](https://github.com/user-attachments/assets/5135e9e8-0093-4b63-8604-0ee0f47af969)
+
 
 GIF created with **ScreenToGif** ## Notes
 
